@@ -7,8 +7,11 @@
 
 import Foundation
 
-enum MotivationCategory: String {
-    case smoking = "Курение"
-    case junkFood = "Вредная еда"
-    case competitiveGames = "Дота"
+struct MotivationCategory {
+    let id: UUID = UUID()
+    var title: String
+    var systemName: String
+    var icon: String? = nil
+    var color: String? = nil
+    var images: [MotivationImage] = []
 }
