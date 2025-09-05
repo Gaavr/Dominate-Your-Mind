@@ -9,8 +9,8 @@ import Foundation
 
 struct MotivationImage {
     var id: UUID = UUID()
-    var category: String
+    var category: UUID
     var imageName: String
     var isLiked: Bool = false
-    var dateAdded: Date
+    var dateAdded: Date = .now
 }
